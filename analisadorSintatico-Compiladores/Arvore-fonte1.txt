@@ -1,0 +1,88 @@
+| | | ARVORE SINTATICA | | |
+program
+ ├headers headers
+ |  ├INCLUDE
+ |  ┕INCLUDE
+ ┕main
+ |  ├cab
+ |  |  ├INT
+ |  |  ┕dataType ID[]
+ |  |  |  ├CHAR
+ |  ┕body
+ |  |  ├content cont
+ |  |  |  ├content cont
+ |  |  |  |  ├cont
+ |  |  |  |  |  ├attSTATE
+ |  |  |  |  |  |  ├bodyATT;
+ |  |  |  |  |  |  |  ├bodyATT, ID
+ |  |  |  |  |  |  |  |  ├bodyATT, ID
+ |  |  |  |  |  |  |  |  |  ├bodyATT = NUMorID
+ |  |  |  |  |  |  |  |  |  |  ├dataType ID
+ |  |  |  |  |  |  |  |  |  |  |  ├INT
+ |  |  |  |  |  |  |  |  |  |  ┕NUMBER
+ |  |  |  |  ┕attSTATE
+ |  |  |  |  |  ├bodyATT;
+ |  |  |  |  |  |  ├attSTR
+ |  |  |  |  |  |  |  ├CHAR ID NUMorEMP bodySTR!
+ |  |  |  |  |  |  |  |  ┕=
+ |  |  |  |  |  |  |  |  |  ├"Compiladores"
+ |  |  |  ┕ifSTATE
+ |  |  |  |  ├bodyIF
+ |  |  |  |  |  ├IF (expCOND) bodyLOOP
+ |  |  |  |  |  |  ├expCOND COMP expCOND
+ |  |  |  |  |  |  |  ├NUMorID
+ |  |  |  |  |  |  |  |  ├ID
+ |  |  |  |  |  |  |  ┕NUMorID
+ |  |  |  |  |  |  |  |  ├NUMBER
+ |  |  |  |  |  |  ┕bodyLOOP
+ |  |  |  |  |  |  |  ┕content cont
+ |  |  |  |  |  |  |  |  ├cont
+ |  |  |  |  |  |  |  |  |  ├PRorSC_STATE
+ |  |  |  |  |  |  |  |  |  |  ├PRorSC (STR bodyPRorSC);!
+ |  |  |  |  |  |  |  |  |  |  |  ├SCANF
+ |  |  |  |  |  |  |  |  |  |  |  ┕, expCOND bodyPRorSC
+ |  |  |  |  |  |  |  |  ┕forSTATE
+ |  |  |  |  |  |  |  |  |  ├forSTATE
+ |  |  |  |  |  |  |  |  |  |  ├for
+ |  |  |  |  |  |  |  |  |  |  |  ├forINIT
+ |  |  |  |  |  |  |  |  |  |  |  |  ┕dataType InitFor
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ├INT
+ |  |  |  |  |  |  |  |  |  |  |  ┕forMID
+ |  |  |  |  |  |  |  |  |  |  |  |  ├expCOND COMP expCOND
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ├NUMorID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├ID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ┕NUMorID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├NUMBER
+ |  |  |  |  |  |  |  |  |  |  |  |  ┕forUpdate
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ├UpdateDF, UpdateDF
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├ID opINCorDEC
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕++
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕UpdateDF, UpdateDF
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├ID opINCorDEC
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕--
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕ID opINCorDEC
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕++
+ |  |  |  |  |  |  |  |  |  |  ┕bodyLOOP
+ |  |  |  |  |  |  |  |  |  |  |  ┕content cont
+ |  |  |  |  |  |  |  |  |  |  |  |  ├cont
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ├PRorSC_STATE
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├PRorSC (STR bodyPRorSC);!
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├PRINTF
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕, expCOND bodyPRorSC
+ |  |  |  |  |  |  |  |  |  |  |  |  ┕ifSTATE
+ |  |  |  |  |  |  |  |  |  |  |  |  |  ├bodyIF
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├IF (expCOND) bodyLOOP
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├expCOND COMP expCOND
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├NUMorID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├ID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕NUMorID
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├NUMBER
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕bodyLOOP
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕cont
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├attSTATE
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├bodyATT;
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├b
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ├=
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ┕1
+ |  |  ┕RETURN NUMorID;
+ |  |  |  ┕NUMBER

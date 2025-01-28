@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(char argv[]){
+    int ix, iix;
+    float ffx = 10.51;
+    double dx, ddx;
+    char cx, ccx;
+    void vx, vvx;
+    
+    ix = 2;
+
+    int lx = ix - 2; 
+    return 1;
+}
